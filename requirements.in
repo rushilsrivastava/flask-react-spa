@@ -8,7 +8,7 @@ flask-alembic
 flask-mail
 flask-marshmallow
 flask-restful
-flask-security
+flask-security-too
 flask-session
 flask-sqlalchemy
 
