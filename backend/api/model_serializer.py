@@ -1,13 +1,13 @@
 from flask_sqlalchemy.model import camel_to_snake_case
 from marshmallow.exceptions import ValidationError
 
-from backend.extensions.marshmallow import ma
+from marshmallow_sqlalchemy import ModelSchema
 
 from .constants import READ_ONLY_FIELDS
 from .utils import to_camel_case
 
 
-class ModelSerializer(ma.ModelSchema):
+class ModelSerializer(ModelSchema):
     """
     Base class for database model serializers. This is pretty much a stock
     :class:`flask_marshmallow.sqla.ModelSchema`: it will automatically create

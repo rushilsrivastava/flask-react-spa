@@ -2,7 +2,9 @@ import click
 import flask
 import inspect
 
-from flask_marshmallow.sqla import ModelSchema
+# This is deprecated implementation, see:
+# https://flask-marshmallow.readthedocs.io/en/latest/changelog.html#changelog
+from marshmallow_sqlalchemy import ModelSchema
 from flask_sqlalchemy import Model
 from importlib import import_module
 
