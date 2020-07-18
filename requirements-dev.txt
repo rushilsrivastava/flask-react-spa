@@ -5,46 +5,48 @@
 #    pip-compile --output-file=requirements-dev.txt requirements-dev.in
 #
 # The following packages are considered to be unsafe in a requirements file:
+# pip
 # setuptools
 -r requirements.txt
 
 alabaster==0.7.12         # via sphinx
 attrs==19.3.0             # via pytest
-certifi==2019.11.28       # via requests
+certifi==2020.6.20        # via requests
 chardet==3.0.4            # via requests
-docutils==0.15.2          # via sphinx
-faker==3.0.0
-filelock==3.0.12          # via tox
+distlib==0.3.1            # via virtualenv
+docutils==0.16            # via sphinx
+faker==4.1.1              # via -r requirements-dev.in
+filelock==3.0.12          # via tox, virtualenv
 ghp-import==0.5.5         # via travis-sphinx
-guzzle-sphinx-theme==0.7.11
-idna==2.8                 # via requests
+guzzle-sphinx-theme==0.7.11  # via -r requirements-dev.in
 imagesize==1.2.0          # via sphinx
-livereload==2.6.1
-packaging==20.0           # via pytest, sphinx, tox
-pbr==5.4.4                # via sphinx-click
-pip-tools==4.3.0
+livereload==2.6.2         # via -r requirements-dev.in
+more-itertools==8.4.0     # via pytest
+packaging==20.4           # via pytest, sphinx, tox
+pbr==5.4.5                # via sphinx-click
+pip-tools==5.2.1          # via -r requirements-dev.in
 pluggy==0.13.1            # via pytest, tox
-py==1.8.1                 # via pytest, tox
-pygments==2.5.2           # via sphinx
-pyparsing==2.4.6          # via packaging
-pytest-flask==0.15.0
-pytest==5.3.2
-requests==2.22.0          # via sphinx
+py==1.9.0                 # via pytest, tox
+pygments==2.6.1           # via sphinx
+pyparsing==2.4.7          # via packaging
+pytest-flask==1.0.0       # via -r requirements-dev.in
+pytest==5.4.3             # via -r requirements-dev.in, pytest-flask
+requests==2.24.0          # via sphinx
 snowballstemmer==2.0.0    # via sphinx
-sphinx-click==2.3.1
-sphinx==2.3.1
-sphinxcontrib-applehelp==1.0.1  # via sphinx
-sphinxcontrib-devhelp==1.0.1  # via sphinx
-sphinxcontrib-htmlhelp==1.0.2  # via sphinx
+sphinx-click==2.3.2       # via -r requirements-dev.in
+sphinx==3.1.2             # via -r requirements-dev.in, guzzle-sphinx-theme, sphinx-click, travis-sphinx
+sphinxcontrib-applehelp==1.0.2  # via sphinx
+sphinxcontrib-devhelp==1.0.2  # via sphinx
+sphinxcontrib-htmlhelp==1.0.3  # via sphinx
 sphinxcontrib-jsmath==1.0.1  # via sphinx
-sphinxcontrib-qthelp==1.0.2  # via sphinx
-sphinxcontrib-serializinghtml==1.1.3  # via sphinx
-sphinxcontrib-websupport==1.1.2
+sphinxcontrib-qthelp==1.0.3  # via sphinx
+sphinxcontrib-serializinghtml==1.1.4  # via sphinx
+sphinxcontrib-websupport==1.2.3  # via -r requirements-dev.in
 text-unidecode==1.3       # via faker
-toml==0.10.0              # via tox
-tornado==6.0.3            # via livereload
-tox==3.14.3
-travis-sphinx==2.2.1
-urllib3==1.25.7           # via requests
-virtualenv==16.7.9        # via tox
-wcwidth==0.1.8            # via pytest
+toml==0.10.1              # via tox
+tornado==6.0.4            # via livereload
+tox==3.17.1               # via -r requirements-dev.in
+travis-sphinx==2.2.1      # via -r requirements-dev.in
+urllib3==1.25.9           # via requests
+virtualenv==20.0.27       # via tox
+wcwidth==0.2.5            # via pytest
